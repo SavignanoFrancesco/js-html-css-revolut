@@ -14,19 +14,35 @@ ul{
 }
 
 header{
-    background-color: red;
+    /* border: 1px solid black; */
+    background-color: white;
+    color: #8996a1;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
     /* height: 80px; */
     display: flex;
-    justify-content: space-between;S
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+    /* background-color: blue; */
+    /* height: 80px; */
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-left{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100%;
     width: 30%;
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     align-items: center;
+}
+
+header a:hover{
+    color:black
 }
 
 
@@ -34,14 +50,53 @@ header{
     height: 30px;
 }
 
+.black{
+    color: black;
+}
+
 .header-right{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100%;
-    width: 50%;
-    background-color: pink;
+    /* width: 50%; */
+    /* background-color: pink; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.hamburger-icon{
+    display: none;
+}
+
+.btn{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.btn1{
+    background-color: lightgrey;
+    color: black;
+}
+
+.btn1:hover{
+    background-color: rgba(211,211,211,0.8);
+}
+
+.btn2{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.btn2:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+.header-right .item{
+    /* width: 20%; */
 }
 
 .item span{
@@ -52,12 +107,18 @@ header{
 .box{
     position: relative;
 }
+.box:hover .item > a{
+    color: black;
+}
 
 .dropdown-menu{
     position: absolute;
+    top: 50px;
+    width: 180px;
     display: none;
-    width: 130%;
-    background-color: yellow;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px lightgrey;
 }
 
 .dropdown-menu.active{
@@ -67,5 +128,35 @@ header{
 
 .dropdown-item{
     padding: 20px 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+@media screen and (max-width: 1080px){
+    .container{
+        width: 100%;
+    }
+
+    .logo{
+        padding: 20px;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    header{
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+    }
+
+    header .item{
+        display: none;
+    }
+
+    .hamburger-icon{
+        display: block;
+        padding: 20px;
+        font-size: 25px;
+    }
 }

@@ -29,24 +29,6 @@ header{
     align-items: center;
 }
 
-.header-left div{
-    border: 1px solid black;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.header-right div{
-    border: 1px solid black;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.item{
-    padding: 20px 10px;
-}
 
 .logo img{
     height: 30px;
@@ -64,4 +46,29 @@ header{
 
 .item{
     padding: 20px 10px;
+}
+
+.item a{
+    padding: 20px 10px;
+}
+
+.box{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    width: 130%;
+    background-color: yellow;
+}
+
+.dropdown-menu.active{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-item{
+    padding: 20px 10px;
+    border: 1px solid black;
 }

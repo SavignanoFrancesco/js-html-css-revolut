@@ -131,6 +131,10 @@ header a:hover{
     /* border: 1px solid black; */
 }
 
+.hamburger-menu{
+    display: none;
+}
+
 @media screen and (max-width: 1080px){
     .container{
         width: 100%;
@@ -158,5 +162,25 @@ header a:hover{
         display: block;
         padding: 20px;
         font-size: 25px;
+    }
+
+    .hamburger-menu{
+        display: none;
+    }
+
+    .hamburger-menu.active{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger-left{
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger-right{
+        display: flex;
+        align-items: center;
+        padding: 20px;
     }
 }

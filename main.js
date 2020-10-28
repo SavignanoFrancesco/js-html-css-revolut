@@ -15,4 +15,14 @@ $( document ).ready(function() {
         $('.dropdown-menu').removeClass('active');
     });
 
+    $('.hamburger-icon').click(function(){
+        $('header').hide();
+        $('.hamburger-menu').addClass('active');
+    });
+
+    $('.cross-icon').click(function(){
+        $('header').show();
+        $('.hamburger-menu').removeClass('active');
+    });
+
 });

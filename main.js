@@ -11,4 +11,8 @@ $( document ).ready(function() {
         $(this).removeClass('active');
     });
 
+    $('.box').mouseleave(function(){
+        $('.dropdown-menu').removeClass('active');
+    });
+
 });
